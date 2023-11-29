@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karnaugh game!</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/scripts.js" defer ></script>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="header-inputs">
+            <label for="player1">🏆<b>JOGADOR 1</b> ESCOLA A SUA LETRA DE PREFERÊNCIA PARA JOGAR : </label>
+            <input type="text" id="player1">
+            <label for="player2">🏆<b>JOGADOR 2</b> ESCOLA A SUA LETRA DE PREFERÊNCIA PARA JOGAR : </label>
+            <input type="text" id="player2">
+        </div>
+        <div class="headerbtn">
+            <button id="player-validation-header-btn" onclick="start()" >COMEÇAR!</button>
+            <button id="return-header-btn" onclick="Return()">VOLTAR</button>
+        </div>
+    </div>
+    <div class="players-display" id="players-display">
+        <h1>Player 1 : <h1 class="header-h1" id="playersDisplayPlayer1"></h1></h1>
+        <h1>Vs</h1>
+        <h1>Player 2 : <h1 class="header-h1" id="playersDisplayPlayer2"></h1></h1>
+    </div>
+    <div class="container" id="container">
+        <div class="grid">
+        <div class="space" id="0" ></div>
+        <div class="space" id="1" ></div>
+        <div class="space" id="2" ></div>
+        <div class="space" id="3" ></div>
+        <div class="space" id="4" ></div>
+        <div class="space" id="5" ></div>
+        <div class="space" id="6" ></div>
+        <div class="space" id="7" ></div>
+        <div class="space" id="8" ></div>
+        <div class="space" id="9" ></div>
+        <div class="space" id="10" ></div>
+        <div class="space" id="11" ></div>
+        <div class="space" id="12" ></div>
+        <div class="space" id="13" ></div>
+        <div class="space" id="14" ></div>
+        <div class="space" id="15" ></div>
+    </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="points-grids1" >
+            <h1>Grupo de 1 : <button class="gps" id="pGrids1Btn1" >0</button></h1>
+            <h1>Grupo de 2 : <button class="gps" id="pGrids1Btn2" >0</button></h1>
+            <h1>Grupo de 4 : <button class="gps" id="pGrids1Btn3" >0</button></h1>
+            <h1>Grupo de 8 : <button class="gps" id="pGrids1Btn4" >0</button></h1>
+        </div>
+        <div class="points-grids2" >
+            <h1>Grupo de 1 : <button class="gps" id="pGrids2Btn1" >0</button></h1>
+            <h1>Grupo de 2 : <button class="gps" id="pGrids2Btn2" >0</button></h1>
+            <h1>Grupo de 4 : <button class="gps" id="pGrids2Btn3" >0</button></h1>
+            <h1>Grupo de 8 : <button class="gps" id="pGrids2Btn4" >0</button></h1>
+
+        </div>
+    </div>
+</body>
+</html>
